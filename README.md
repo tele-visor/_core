@@ -7,6 +7,8 @@ this is the monorepo for [zeptocore](https://zeptocore.com), [zeptoboard](https:
 
 for information about purchasing and documentation, visit [zeptocore.com](https://zeptocore.com). demos are available [on youtube](https://www.youtube.com/watch?v=FZ2C9VIMgeI&list=PLCNN6FnBNdpWQUyHAQO_wCQkbMl95-293).
 
+In the standard development container (including GitHub Codespaces), this repository is checked out to `/workspace/_core`; folder references like `testfiles/` map to `/workspace/_core/testfiles` on that filesystem.
+
 ## dsp
 
 The digital signal processing for all the *core things was written by Zack, from scratch, in C. This was done partially to have strict control over the sound/utility, but also because the RP2040 is fixed-point based and needed special care in all the DSP. The libraries are written with modularity in mind, so [they can be used in other programs](https://github.com/schollz/fpfx). Here are the DSP header files:
