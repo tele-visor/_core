@@ -73,6 +73,7 @@ core/storage/*
 core/tmp/*
 core/*zip
 *.wav.info
+!testfiles/**/*.wav.info
 *wav.json
 
 core/core
